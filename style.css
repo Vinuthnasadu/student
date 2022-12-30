@@ -10,17 +10,6 @@ table, th, td {
     /* table-layout: fixed; */
   }
 
-button{
-    background-color: black;
-    color: rgb(255, 255, 255);
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
-}
-
 .header{
    background-color: black;
    color: white;
@@ -34,6 +23,8 @@ button{
 }
 #searchBtn
 {
+    background-color: black;
+    color: white;
   padding: 10px 35px;
 }
 
