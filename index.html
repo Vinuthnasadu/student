@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,17 +13,17 @@
       <div class="header">
         <div>Student Portal</div>
       </div>
-      <div class="search">
-        <input type="text" placeholder="Search" />
+      <div class="searching">
+        <input type="text" placeholder="Search" id="search" />
         <span><button id="searchBtn">Search</button></span>
       </div>
       <div class="buttons">
-        <span><button id="az">Sort A to Z</button></span>
-        <span><button id="za">Sort Z to A</button></span>
-        <span><button id="bymarks">Sort by Marks</button></span>
-        <span><button id="bypassing">Sort by Passing</button></span>
-        <span><button id="byclass">Sort by Class</button></span>
-        <span><button id="bygender">Sort by Gender</button></span>
+        <span><button class="sbutton" id="az">Sort A<i class="bi bi-arrow-right"></i>Z</button></span>
+        <span><button class="sbutton" id="za">Sort Z<i class="bi bi-arrow-right"></i>A</button></span>
+        <span><button class="sbutton" id="bymarks">Sort by Marks</button></span>
+        <span><button class="sbutton" id="bypassing">Sort by Passing</button></span>
+        <span><button class="sbutton" id="byclass">Sort by Class</button></span>
+        <span><button class="sbutton" id="bygender">Sort by Gender</button></span>
       </div>
       <div class="table-data">
         <table>

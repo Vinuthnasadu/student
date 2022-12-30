@@ -12,7 +12,7 @@ table, th, td {
 
 button{
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .container{
@@ -22,36 +22,27 @@ button{
 }
 
 .header{
-    display: flex;
-    align-items: center;
-    border: 2px solid black;
-    width: auto;
-    height: 20px;
-    padding-left: 10px;
+   background-color: black;
+   color: white;
+   padding: 20px;  
+}
+
+#search{
+    width: 82%;
+    padding: 10px;  
+    margin: 15px;
+}
+#searchBtn
+{
+  padding: 10px 35px;
+}
+
+
+.sbutton{
+    background-color: black;
     color: white;
-    background-color: black;   
-}
-
-.search{
-    padding: 10px 10px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(146, 140, 140);
-    height: 10px;    
-}
-
-.search input{
-    width: 92vw;
-    height: 15px;
-}
-
-.buttons{
-    display: flex;
-    /* border: 2px solid black; */
-    justify-content: space-between;
-    height: 25px;
-    padding: 8px 10px;
-    background-color: rgb(146, 140, 140);
+    padding: 15px 45px;
+    margin: 10px;
 }
 
 .table-data{
