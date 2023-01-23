@@ -16,7 +16,8 @@ myJson.forEach((e) => {
     e.passing = "Fail";
   }
   let tr = document.createElement("tr");
-  tr.innerHTML = `<td>${e.id}</td><td> <img src="${e.img_src}" alt="" height = 10px> ${e.first_name} ${e.last_name}</td><td>${e.gender}</td><td>${e.class}</td><td>${e.marks}</td><td>${e.passing}</td><td>${e.email}</td>`;
+  tr.innerHTML = `<td>${e.id}</td>
+  <td> <img src="${e.img_src}" alt="" height = 10px> ${e.first_name} ${e.last_name}</td><td>${e.gender}</td><td>${e.class}</td><td>${e.marks}</td><td>${e.passing}</td><td>${e.email}</td>`;
   data.append(tr);
 });
 let table_row = document.querySelectorAll("tr");
@@ -165,6 +166,15 @@ function sortBygender() {
     }
   });
   console.log(arr);
+  for (let i = 1; i < arr.length; i++) {
+    table_row[i].innerHTML = `<td>${arr[i - 1].id}</td><td><img src="${
+      arr[i - 1].img_src
+    }" alt="" height = 10px> ${arr[i - 1].first_name} ${
+      arr[i - 1].last_name
+    }</td><td>${arr[i - 1].gender}</td><td>${arr[i - 1].class}</td><td>${
+      arr[i - 1].marks
+    }</td><td>${arr[i - 1].passing}</td><td>${arr[i - 1].email}</td>`;
+  }
   myJson.forEach((e) => {
     // console.log(e);
     if (e.gender == "Male") {
@@ -199,7 +209,7 @@ function sortBypassing() {
     }" alt="" height = 10px> ${arr[i - 1].first_name} ${
       arr[i - 1].last_name
     }</td><td>${arr[i - 1].gender}</td><td>${arr[i - 1].class}</td><td>${
-      arr[i - 1].marks
+1      arr[i - 1].marks
     }</td><td>${arr[i - 1].passing}</td><td>${arr[i - 1].email}</td>`;
   }
 
